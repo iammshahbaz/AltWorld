@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Project Overview
+This project utilizes React and TypeScript to develop a frontend with an interactive user interface. Leveraging modern web technologies, it delivers a dynamic user experience. The UI is designed to engage users through responsiveness and interactivity, enhancing usability and creating an immersive browsing environment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+1.Animation: Incorporates smooth animations to enhance user engagement.
+2.Pixel Perfect Design: Ensures precise alignment and visual consistency for a polished appearance.
+3.Media Queries: Utilizes responsive design techniques for optimal viewing across various devices.
+4.Interactive Elements: Implements interactive elements to provide an engaging browsing experience.
+5.Accessibility: Prioritizes accessibility features to ensure inclusivity and usability for all users.
 
-Currently, two official plugins are available:
+## ScreenShots
+### Desktop View
+![Desktop](https://github.com/iammshahbaz/AltWorld/assets/147658447/e6835e75-ead1-415d-a74d-f8973f13924b)
+### Tablet View
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="https://github.com/iammshahbaz/AltWorld/assets/147658447/b42ead58-f878-4cb0-945d-f7354de3a50e" width="400" alt="Screenshot 1">
+  <img src="https://github.com/iammshahbaz/AltWorld/assets/147658447/14dbae5f-2cdf-4465-a48d-d1d30f6da896" width="400" alt="Screenshot 2">
+</p>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Mobile View
 
-- Configure the top-level `parserOptions` property like this:
+<p align="center">
+  <img src="https://github.com/iammshahbaz/AltWorld/assets/147658447/68115660-8d5e-4ce3-8863-63ff6488c425" width="250" alt="Screenshot 1">
+  <img src="https://github.com/iammshahbaz/AltWorld/assets/147658447/00bb0ee7-68da-4eb3-9355-4ec8d223f3aa" width="250" alt="Screenshot 2">
+  <img src="https://github.com/iammshahbaz/AltWorld/assets/147658447/2a05b48d-4b34-4b84-b2d4-39f1b9304047" width="250" alt="Screenshot 3">
+</p>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
