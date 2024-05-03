@@ -3,25 +3,26 @@ import { AddIcon } from '@chakra-ui/icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faBox, faFile, faHouse } from '@fortawesome/free-solid-svg-icons';
 import "./App.css"
-import { useState } from "react";
+// import { useState } from "react";
 import CountUp from 'react-countup';
 
 
 
 
 function App(): JSX.Element {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
   return (
     <>
       {/* hello
 <Button colorScheme='teal'>Button</Button> */}
       <Flex gap={4} className="container">
-        <FontAwesomeIcon icon={faBars} onClick={toggleSidebar} className="menuBar" />
-        <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+        {/* <FontAwesomeIcon icon={faBars} onClick={toggleSidebar} className="menuBar" /> */}
+        {/* <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}> */}
+        <div className="sidebar">
           <Flex pl={8} pb={2} pt={4}> <FontAwesomeIcon icon={faBars} className="secondary-menu" />
             <Heading size='xs' pl={2}>HI, AltWorld</Heading>
           </Flex>
@@ -55,8 +56,8 @@ function App(): JSX.Element {
                 https://tiny.url/asknandna
               </a>
             </Text>
-            <Text fontSize={'12px'} pl={4} fontWeight={'bold'} color={'gray'}>Assignment Hours <span style={{ color: 'gray', marginLeft: '150px' }}>3 hours</span></Text>
-            <Text fontSize={'12px'} pl={4} pb={4} fontWeight={'bold'} color={'gray'}>Assignment ends at <span style={{ color: 'gray', marginLeft: '140px' }}>11 March 2024</span></Text>
+            <Text fontSize={'12px'} pl={4} fontWeight={'bold'} color={'gray'}>Assignment Hours <span className="link" style={{ color: 'gray', marginLeft: '150px' }}>3 hours</span></Text>
+            <Text fontSize={'12px'} pl={4} pb={4} fontWeight={'bold'} color={'gray'}>Assignment ends at <span className="link" style={{ color: 'gray', marginLeft: '140px' }}>11 March 2024</span></Text>
             <Flex p={2}>
               <Button style={{ backgroundColor: 'white', fontSize: '10px', height: '20px' }}>
                 <FontAwesomeIcon icon={faBox} style={{ paddingRight: '10px' }} />
@@ -150,15 +151,15 @@ function App(): JSX.Element {
           <Card marginTop={12} width={'auto'} p={2}>
             <Flex className="thirdItem">
               <div>
-                <Flex justify="space-between" alignItems="center" p={2} >
-                  <Flex alignItems="center">
+                <Flex justify="space-between" alignItems="center" p={2} pr={0} >
+                  <Flex alignItems="space-between">
                     <img style={{ width: '50px', height: '50px', borderRadius: '10%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                     <Flex flexDir="column">
                       <Heading size="xs">Saurabh Singh</Heading>
                       <p style={{ margin: '0' }}>saurabh@gmail.com</p>
                     </Flex>
-                  </Flex>
-                  <Heading size="md" pr={2} color={'#68D391'}><CountUp end={78} duration={6} />%</Heading>
+                  </Flex >
+                  <Heading size="md" pr={0} color={'#68D391'}><CountUp end={78} duration={6}/>%</Heading>
                 </Flex>
                 <Flex>
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'gray'}>Behavioural</Text>
@@ -218,6 +219,7 @@ function App(): JSX.Element {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  style={{ borderRadius: '20px' }}
                   
                 ></iframe>
 
