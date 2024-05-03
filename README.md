@@ -2,11 +2,12 @@
 This project utilizes React and TypeScript to develop a frontend with an interactive user interface. Leveraging modern web technologies, it delivers a dynamic user experience. The UI is designed to engage users through responsiveness and interactivity, enhancing usability and creating an immersive browsing environment.
 
 ## Features
-1.Animation: Incorporates smooth animations to enhance user engagement.
-2.Pixel Perfect Design: Ensures precise alignment and visual consistency for a polished appearance.
-3.Media Queries: Utilizes responsive design techniques for optimal viewing across various devices.
-4.Interactive Elements: Implements interactive elements to provide an engaging browsing experience.
-5.Accessibility: Prioritizes accessibility features to ensure inclusivity and usability for all users.
+- Animation: Incorporates smooth animations to enhance user engagement.
+- Pixel Perfect Design: Ensures precise alignment and visual consistency for a polished appearance.
+- Media Queries: Utilizes responsive design techniques for optimal viewing across various devices.
+- Interactive Elements: Implements interactive elements to provide an engaging browsing experience.
+- Accessibility: Prioritizes accessibility features to ensure inclusivity and usability for all users.
+
 
 ## ScreenShots
 ### Desktop View
