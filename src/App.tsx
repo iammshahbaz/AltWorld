@@ -40,11 +40,11 @@ function App(): JSX.Element {
           </Flex>
         </div>
 
-        <div>
+        <div className="secondItem">
           <Text fontSize={'12px'} fontWeight={'bold'} p={4}>Pages/<span style={{ color: 'gray' }}>Assignment</span> </Text>
           <Heading size='xs' pl={4}>Sales BDE</Heading>
           <Card>
-            <Heading size='sm' p={4}>Sales BDE <span style={{ color: '#68D391', marginLeft: '180px' }}>Active</span></Heading>
+            <Heading size='sm' p={4}>Sales BDE <span style={{ color: '#68D391', marginLeft: '180px' }} className="active-heading">Active</span></Heading>
             <Text fontSize={'12px'} pl={4} fontWeight={'bold'} color={'gray'}>
               Assignment Link
               <a
@@ -52,6 +52,7 @@ function App(): JSX.Element {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: '160px', color: 'blue', textDecoration: 'underline', paddingRight: '10px' }}
+                className="link"
               >
                 https://tiny.url/asknandna
               </a>
@@ -75,7 +76,7 @@ function App(): JSX.Element {
               <Text fontSize={'10px'} fontWeight={'bold'} pl={2} pr={2} color={"gray"}>Score</Text>
             </Flex>
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -86,7 +87,7 @@ function App(): JSX.Element {
               <Heading size="sm" pr={2} color={'#68D391'}><CountUp end={78} duration={6} />%</Heading>
             </Flex>
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -97,7 +98,7 @@ function App(): JSX.Element {
               <Heading size="sm" pr={2} color={'#68D391'}><CountUp end={72} duration={5} />%</Heading>
             </Flex>
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -109,7 +110,7 @@ function App(): JSX.Element {
             </Flex>
 
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -120,7 +121,7 @@ function App(): JSX.Element {
               <Heading size="sm" pr={2} color={'#ecb22e'}><CountUp end={32} duration={2} />%</Heading>
             </Flex>
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -131,7 +132,7 @@ function App(): JSX.Element {
               <Heading size="sm" pr={2} color={'#68D391'}><CountUp end={52} duration={4} />%</Heading>
             </Flex>
 
-            <Flex justify="space-between" alignItems="center" p={2}>
+            <Flex justify="space-between" alignItems="center" p={2} className="second-percentage">
               <Flex alignItems="center">
                 <img style={{ width: '30px', height: '30px', borderRadius: '20%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                 <Flex flexDir="column">
@@ -147,11 +148,11 @@ function App(): JSX.Element {
         </div>
 
         {/* 3rdcard */}
-        <div>
+        <div className="third">
           <Card marginTop={12} width={'auto'} p={2}>
             <Flex className="thirdItem">
               <div>
-                <Flex justify="space-between" alignItems="center" p={2} pr={0} >
+                <Flex justify="space-between" alignItems="center" p={2} pr={0} className="third-percentage" >
                   <Flex alignItems="space-between">
                     <img style={{ width: '50px', height: '50px', borderRadius: '10%', marginRight: '10px' }} src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgLilcVMauyAyTJYJyWkU7TQFiMPj9szqbrEkVO59yezb1nQ7b" alt="img" />
                     <Flex flexDir="column">
@@ -161,7 +162,7 @@ function App(): JSX.Element {
                   </Flex >
                   <Heading size="md" pr={0} color={'#68D391'}><CountUp end={78} duration={6}/>%</Heading>
                 </Flex>
-                <Flex>
+                <Flex className="progress">
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'gray'}>Behavioural</Text>
                   <Progress colorScheme='green' width={'60%'} size='sm' value={90} borderRadius={'10px'} m={2} ml={12} className="progress-animation" />
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'#68D391'}>9/10</Text>
@@ -169,7 +170,7 @@ function App(): JSX.Element {
                 </Flex>
 
                 {/* comm */}
-                <Flex>
+                <Flex className="progress">
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'gray'}>Communication</Text>
                   <Progress colorScheme='green' width={'60%'} size='sm' value={80} borderRadius={'10px'} m={2} ml={7} className="progress-animation" />
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'#68D391'}>8/10</Text>
@@ -177,7 +178,7 @@ function App(): JSX.Element {
                 </Flex>
 
                 {/* situat */}
-                <Flex>
+                <Flex className="progress">
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'gray'}>SituationHandling</Text>
                   <Progress colorScheme='yellow' width={'60%'} size='sm' value={60} borderRadius={'10px'} m={2} ml={4} className="progress-animation" />
                   <Text fontSize={'12px'} pl={2} fontWeight={'bold'} color={'#ecb22e'}>6/10</Text>
@@ -220,6 +221,7 @@ function App(): JSX.Element {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   style={{ borderRadius: '20px' }}
+                  className="video"
                   
                 ></iframe>
 
